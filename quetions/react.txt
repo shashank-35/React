@@ -1,0 +1,10 @@
+1. what is react ?
+2. Why we use react ?
+3. what is props ?
+4. what is map and key ?
+5. what is the importance of key ?
+6. what is component ?
+7. type of component in react ?
+8. why functional component is batter then class component ?
+9. 
+

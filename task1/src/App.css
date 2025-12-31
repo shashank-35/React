@@ -1,0 +1,146 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo img{
+    height: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+.NavLink{
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin-right: 150px;
+}
+.NavLink a{
+    margin: 0 15px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.NavLink a:hover{
+    color: #f92a0a;
+}
+.Icons{
+    display: flex;
+    justify-self:space-between;
+    align-items: center;
+    gap: 15px;
+    margin-right: 80px;
+    margin: 0 80px;
+    padding-right: 10px;
+}
+
+.Body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+.heading1{
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0 0 5px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+.heading2{
+    font-size: 30.6px;
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.underLine{
+  text-decoration: underline 3px;
+  text-underline-offset: 11px;
+}
+
+.CardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+}
+.Body h1{
+    font-size: 48px;
+    color: #333;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.Card img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cardText{
+    /* text-align: center; */
+    font-size: large;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: auto;
+
+}
+.cardPrice{
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.Footer{
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.FooterContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.FooterContent p{
+    font-size: 14px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+.FooterContent input{
+    padding: 10px;
+    color: #fffbfb;
+    width: 300px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+} 
+.FooterContent input::placeholder{
+    font-size: 13px;
+    color: #999;
+}
