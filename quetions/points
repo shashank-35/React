@@ -1,0 +1,32 @@
+-HOOks-
+1.usestate
+2.useEffect
+3.useRef
+4.useCallback
+5.useMemo
+6.useReduser
+7.useContext
+
+
+
+*state
+-state me hum component ka data store karne ke liye use hota hai
+-state ki value hum directly nai change kar sakte
+-state ki value ko change karne ke liye hame SET method milti hai
+-state me hum initial value pass kar sakte hai useState(0)
+
+
+*useEffect
+-react ke under sideeffect ko control karne ke liye use karte hai
+-eg app koi website me peheli bar aaye toh api call karne ke liye or data lane ke liye
+-koi state or props ke value change hone par kuch check/operation karna ho
+-there are three type
+    -first time call 
+    -first time + every time
+    -with dependency
+- in dependency we can pass state and props 
+dependency type -1 blanck array dependency ,2 with dependency and 3 with out dependency
+
+-without dependency [] useEffect call always
+-with dependency blanck array [] call once a time
+- and with dependency call when state and props change base on state and props
