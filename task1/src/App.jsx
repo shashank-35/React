@@ -1,24 +1,21 @@
-
+import { useState } from 'react'
+import viteLogo from '/vite.svg'
 import './App.css'
-import { Effect } from "./React Point/Effect";
-import { Task } from './React Point/Task.jsx';
-import { Body } from './UrbanBags/Body.jsx'
-import { Body2 } from './UrbanBags/Body2.jsx'
-import { Footer } from './UrbanBags/Footer'
-import { Header } from './UrbanBags/Header.jsx'
+
+import { User } from './components/User.jsx'
+import { Button } from '@/components/ui/button'
+import { InputGroupDemo } from './components/UserForm'
+import {Todo4}  from './TodoList/Todo4.jsx'
+import { Todo3 } from './TodoList/Todo3'
+import Todo from './TodoList/Todo'
+
 
 function App() {
   return(
     <div>
-      {/* <Header /> */}
-      {/* <Body /> */}
-      {/* <Body2/>
-      <Footer/> */}
-
-      {/* <State/> */}
-
-      {/* <Effect /> */}
-      <Task/>
+     {/* <Todo4/> */}
+{/* <Todo3/> */}
+<Todo/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export function Effect(params) {
     if(count===0) {
       return;
     }
-    if(count === 10) {
+    if(count % 10 === 0) {
 window.alert(`count change :${count}`)
     }
     
