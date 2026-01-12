@@ -10,14 +10,18 @@
 // });
 // console.log("🚀 ~ newArray:", newArray);
 
+// let array = ["aa", "bb", "cc"];
+// console.log("🚀 ~ array:", array)
 
-let array = ["aa", "bb", "cc"];
-console.log("🚀 ~ array:", array)
+// let jsonString = JSON.stringify(array)
+// console.log("🚀 ~ jsonString:", typeof jsonString)
 
-let jsonString = JSON.stringify(array)
-console.log("🚀 ~ jsonString:", typeof jsonString)
+// let x = JSON.parse(jsonString)
+// console.log("🚀 ~ x:", x)
+
+let obj = { a: 0, b: 0 };
+console.log("🚀 ~ obj:", obj)
 
 
-
-let x = JSON.parse(jsonString)
-console.log("🚀 ~ x:", x)
+obj = {...obj, a: 20 };
+console.log("🚀 ~ obj:", obj)
