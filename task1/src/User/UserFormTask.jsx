@@ -43,7 +43,7 @@ export default function UserFormTask() {
     setUpdateMode(false);
   };
 
-  const Delete = () => {
+  const Delete = (i) => {
     const filteredData = userData.filter((e, index) => index !== i);
     setUserData(filteredData);
   };
@@ -88,7 +88,7 @@ export default function UserFormTask() {
                   <li>Name: {e.name}</li>
                   <li>Age: {e.age}</li>
                   <Button onClick={() => editHandler(e, i)}>Update</Button>
-                  <Button onClick={() => Delete()}>Delete</Button>
+                  <Button onClick={() => Delete(i)}>Delete</Button>
                 </div>
               );
             })}
