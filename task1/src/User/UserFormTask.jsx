@@ -7,29 +7,33 @@ export default function UserFormTask() {
     age: "",
   });
 
-   let [userData, setUserData] = useState([]);
+  let [userData, setUserData] = useState([]);
+  console.log("----------urvish-----------22------:", userData);
 
-   const [index, setIndex] = useState(null);
+  const [index, setIndex] = useState(null);
   const [updateMode, setUpdateMode] = useState(false);
   // console.log("🚀 ~ UserFormTask ~ user:", user)
 
- 
-  
-  console.log("🚀 ~ UserFormTask ~ userData:", userData);
+  // console.log("🚀 ~ UserFormTask ~ userData:", userData);
 
   const userHandler = (e) => {
+    console.log("----------urvish-----------33------:", userData);
+
     e.preventDefault();
     setUserData([...userData, user]);
     setUser({ name: "", age: "" });
   };
 
   const editHandler = (element, idx) => {
+    console.log("----------urvish----------44------:", userData);
+
     setUser(element);
     setIndex(idx);
     setUpdateMode(true);
   };
 
-  const updateHandler = () => {
+  const updateHandler = (e) => {
+    e.preventDefault()
     let updatedArray = userData.map((e, i) => {
       if (i === index) {
         return user;
@@ -37,13 +41,15 @@ export default function UserFormTask() {
         return e;
       }
     });
-    console.log("🚀 ~ updateHandler ~ updatedArray:", updatedArray);
+    console.log("----------urvish-----------11------:", updatedArray);
     setUserData(updatedArray);
     setUser({ name: "", age: "" });
     setUpdateMode(false);
   };
 
   const Delete = (i) => {
+    console.log("----------urvish----------55------:", userData);
+
     const filteredData = userData.filter((e, index) => index !== i);
     setUserData(filteredData);
   };
@@ -52,7 +58,7 @@ export default function UserFormTask() {
       <div>
         <h1>User Form</h1>
       </div>
-      <form action="" onSubmit={(e) => userHandler(e)}>
+      <form action="">
         <label htmlFor="name">Name:</label>
         <input
           value={user.name}
@@ -71,11 +77,13 @@ export default function UserFormTask() {
         />
 
         {updateMode ? (
-          <Button type="button" onClick={() => updateHandler()}>
+          <Button type="button" onClick={(e) => updateHandler(e)}>
             Update
           </Button>
         ) : (
-          <Button type="submit">Submit</Button>
+          <Button type="submit" onClick={(e) => userHandler(e)}>
+            Submit
+          </Button>
         )}
       </form>
 

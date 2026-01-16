@@ -14,6 +14,8 @@ import { Toaster } from "./components/ui/sonner";
 import ApiTask from "./api/ApiTask";
 import UserForm from "./User/UserForm";
 import UserFormTask from "./User/UserFormTask";
+import SelectInput from "./input/SelectInput";
+import CheckBoxInput from "./input/CheckBoxInput";
 
 function App() {
   return (
@@ -27,7 +29,10 @@ function App() {
       {/* <ApiTask/> */}
       {/* <Todo1/> */}
       {/* <UserForm /> */}
-      <UserFormTask/>
+      {/* <UserFormTask/> */}
+      {/* <SelectInput/> */}
+      <CheckBoxInput/>
+
     </div>
   );
 }
