@@ -16,6 +16,9 @@ import UserForm from "./User/UserForm";
 import UserFormTask from "./User/UserFormTask";
 import SelectInput from "./input/SelectInput";
 import CheckBoxInput from "./input/CheckBoxInput";
+import TodoPractice from "./TodoList/TodoPractice";
+import Todop from "./TodoList/Todop";
+import StudentForm from "./components/StudentForm";
 
 function App() {
   return (
@@ -31,8 +34,10 @@ function App() {
       {/* <UserForm /> */}
       {/* <UserFormTask/> */}
       {/* <SelectInput/> */}
-      <CheckBoxInput/>
-
+      {/* <CheckBoxInput/> */}
+{/* <TodoPractice/> */}
+{/* <Todop/> */}
+<StudentForm/>
     </div>
   );
 }
